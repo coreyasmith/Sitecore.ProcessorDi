@@ -1,0 +1,21 @@
+﻿@using ProcessorDi.Models
+@model TestViewModel
+<table>
+  <thead>
+    <tr>
+      <td><strong>@nameof(ScopedServiceViewModel.Name)</strong></td>
+      <td><strong>@nameof(ScopedService.Id)</strong></td>
+      <td><strong>@nameof(ScopedService.IsDisposed)</strong></td>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var scopedServiceVm in Model.ScopedServices)
+    {
+      <tr>
+        <td>@scopedServiceVm.Name</td>
+        <td>@scopedServiceVm.ScopedService.Id</td>
+        <td>@scopedServiceVm.ScopedService.IsDisposed</td>
+      </tr>
+    }
+  </tbody>
+</table>
