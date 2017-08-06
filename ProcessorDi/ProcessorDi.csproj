@@ -102,6 +102,7 @@
   <ItemGroup>
     <Compile Include="Constants.cs" />
     <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Models\DisposeSingletonServices.cs" />
     <Compile Include="Models\IScopedService.cs" />
     <Compile Include="Models\ProcessorDiConfigurator.cs" />
     <Compile Include="Models\ScopedService.cs" />
